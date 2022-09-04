@@ -41,8 +41,6 @@ function displayMonth() {
     }
 }
 
-
-
 console.log(displayMonth());
 console.log(displayDay());
 
@@ -51,6 +49,3 @@ console.log(today);
 console.log(day);
 console.log(month);
 console.log(year);
-
-let todaysTime = document.getElementById("current-time").innerText;
-
