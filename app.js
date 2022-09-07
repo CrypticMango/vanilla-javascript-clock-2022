@@ -2,7 +2,10 @@ const today = new Date();
 const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 const month = today.getMonth();
 const day = today.getDay();
+const calendarDay = today.getDate();
 const year = today.getFullYear();
+
+console.log(calendarDay);
 
 //displays the current time
 
@@ -29,8 +32,7 @@ function displayDay() {
    } else { return daysOfWeek[6]}
 }
 
-let currentDate = document.getElementById("current-date");
-currentDate.innerHTML = displayDay();
+
 //displays the month of the year
 
 const monthArr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -41,8 +43,10 @@ function displayMonth() {
     }
 }
 
-console.log(displayMonth());
-console.log(displayDay());
+let currentDate = document.getElementById("current-date");
+currentDate.innerHTML = displayDay() + " " + displayMonth() + " " + calendarDay + " " + year;
+
+
 
 console.log(time);
 console.log(today);
