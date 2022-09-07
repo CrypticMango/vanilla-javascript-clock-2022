@@ -79,8 +79,30 @@ const monthArr = [
 ];
 
 function displayMonth() {
-	if (month == 8) {
+	if (month == 0) {
+		return monthArr[0];
+	} else if (month == 1) {
+		return monthArr[1];
+	} else if ( month == 2) {
+		return monthArr[2];
+	} else if (month == 3) {
+		return monthArr[3];
+	} else if (month == 4) {
+		return monthArr[4];
+	} else if (month == 5) {
+		return monthArr[5];
+	} else if (month == 6) {
+		return monthArr[6];
+	} else if (month == 7) {
+		return monthArr[7];
+	} else if (month == 8) {
 		return monthArr[8];
+	} else if (month == 9) {
+		return monthArr[9];
+	} else if (month == 10) {
+		return monthArr[10];
+	} else {
+		return monthArr[11];
 	}
 }
 
