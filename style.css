@@ -1,8 +1,28 @@
 :root {
+
+	/*dark color pallette*/
 	--dark-navy-blue: rgb(22, 33, 62);
 	--navy-blue: rgb(15, 52, 96);
 	--purple: rgb(83, 52, 131);
 	--watermelon-red: rgb(233, 69, 96);
+
+	/*summer color pallette*/
+	--creamy-blue: rgb(190, 235, 233);
+	--creamy-pink: rgb(244, 218, 218);
+	--light-pink: rgb(255, 182, 185);
+	--creamy-beige: rgb(246, 238, 199);
+
+	/*vintage color pallette*/
+	--light-green: rgb(126, 181, 166);
+	--orange: rgb(195, 104, 57);
+	--brown: rgb(134, 52, 10);
+	--beige: rgb(232, 208, 179);
+
+	/*pride color pallette*/
+	--light-red: rgb(255, 107, 107);
+	--neon-yellow: rgb(255, 217, 61);
+	--lime-green: rgb(107, 203, 119);
+	--light-blue: rgb(77, 150, 255);
 }
 
 body {
