@@ -8,10 +8,28 @@ const year = today.getFullYear();
 
 console.log(calendarDay);
 
-//displays the current time
+//displays the current time 24 hour clock
 
-let currentTime = document.getElementById("current-time");
-currentTime.innerHTML = time;
+const twentyClock = document.getElementById("twenty-four-clock");
+twentyClock.addEventListener("click", pressTwentyFour);
+
+function pressTwentyFour() {
+    let currentTwoFourTime = document.getElementById("current-time");
+    currentTwoFourTime.innerHTML = time;
+}
+
+//displays current time 12 hour clock
+
+const twelveClock = document.getElementById("twelve-clock");
+twelveClock.addEventListener("click", pressTwelve);
+
+function pressTwelve() {
+    let twelveTime = document.getElementById("current-time");
+    let currentTwelveTime = today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+    twelveTime.innerHTML = currentTwelveTime;
+}
+
+
 
 //displays the day of the week
 
@@ -74,11 +92,17 @@ currentDate.innerHTML =
 	displayMonth() +
 	" " +
 	calendarDay +
-	" " +
+	" " + "/" + " " +
 	year;
+
+    console.log(
+        today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+      );
 
 console.log(time);
 console.log(today);
 console.log(day);
 console.log(month);
 console.log(year);
+
+pressTwelve();
