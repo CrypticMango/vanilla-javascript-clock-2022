@@ -5,6 +5,8 @@ const month = today.getMonth();
 const day = today.getDay();
 const calendarDay = today.getDate();
 const year = today.getFullYear();
+const clockTimeoutOneSec = setTimeout(pressTwentyFour, 1000);
+const clockTimeoutOneMin = setTimeout(pressTwelve, 60000);
 
 console.log(calendarDay);
 
@@ -14,8 +16,9 @@ const twentyClock = document.getElementById("twenty-four-clock");
 twentyClock.addEventListener("click", pressTwentyFour);
 
 function pressTwentyFour() {
-    let currentTwoFourTime = document.getElementById("current-time");
-    currentTwoFourTime.innerHTML = time;
+	let currentTwoFourTime = document.getElementById("current-time");
+	currentTwoFourTime.innerHTML = time;
+	clockTimeoutOneSec;
 }
 
 //displays current time 12 hour clock
@@ -24,12 +27,14 @@ const twelveClock = document.getElementById("twelve-clock");
 twelveClock.addEventListener("click", pressTwelve);
 
 function pressTwelve() {
-    let twelveTime = document.getElementById("current-time");
-    let currentTwelveTime = today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-    twelveTime.innerHTML = currentTwelveTime;
+	let twelveTime = document.getElementById("current-time");
+	let currentTwelveTime = today.toLocaleString("en-US", {
+		hour: "numeric",
+		minute: "numeric",
+		hour12: true,
+	});
+	twelveTime.innerHTML = currentTwelveTime;
 }
-
-
 
 //displays the day of the week
 
@@ -83,7 +88,7 @@ function displayMonth() {
 		return monthArr[0];
 	} else if (month == 1) {
 		return monthArr[1];
-	} else if ( month == 2) {
+	} else if (month == 2) {
 		return monthArr[2];
 	} else if (month == 3) {
 		return monthArr[3];
@@ -114,17 +119,21 @@ currentDate.innerHTML =
 	displayMonth() +
 	" " +
 	calendarDay +
-	" " + "/" + " " +
+	" " +
+	"/" +
+	" " +
 	year;
 
-    console.log(
-        today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
-      );
+console.log(
+	today.toLocaleString("en-US", {
+		hour: "numeric",
+		minute: "numeric",
+		hour12: true,
+	})
+);
 
 console.log(time);
 console.log(today);
 console.log(day);
 console.log(month);
 console.log(year);
-
-pressTwelve();

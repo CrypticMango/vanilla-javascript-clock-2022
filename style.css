@@ -1,3 +1,10 @@
+:root {
+	--dark-navy-blue: rgb(22, 33, 62);
+	--navy-blue: rgb(15, 52, 96);
+	--purple: rgb(83, 52, 131);
+	--watermelon-red: rgb(233, 69, 96);
+}
+
 body {
 	margin: 0;
 	display: flex;
@@ -5,6 +12,9 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	min-height: 100vh;
+	font-family: "Kelly Slab", cursive;
 }
 
-
+button {
+	font-family: "Kelly Slab", cursive;
+}
