@@ -5,8 +5,6 @@ const month = today.getMonth();
 const day = today.getDay();
 const calendarDay = today.getDate();
 const year = today.getFullYear();
-const clockTimeoutOneSec = setTimeout(pressTwentyFour, 1000);
-const clockTimeoutOneMin = setTimeout(pressTwelve, 60000);
 
 console.log(calendarDay);
 
@@ -18,7 +16,6 @@ twentyClock.addEventListener("click", pressTwentyFour);
 function pressTwentyFour() {
 	let currentTwoFourTime = document.getElementById("current-time");
 	currentTwoFourTime.innerHTML = time;
-	clockTimeoutOneSec;
 }
 
 //displays current time 12 hour clock
@@ -137,3 +134,6 @@ console.log(today);
 console.log(day);
 console.log(month);
 console.log(year);
+
+
+pressTwelve();

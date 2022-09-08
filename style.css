@@ -33,8 +33,17 @@ body {
 	justify-content: center;
 	min-height: 100vh;
 	font-family: "Kelly Slab", cursive;
+	background-color: var(--dark-navy-blue);
+	color: var(--watermelon-red);
 }
 
 button {
 	font-family: "Kelly Slab", cursive;
+	background-color: var(--navy-blue);
+}
+
+.digi-clock {
+	background-color: var(--purple);
+	width: 150px;
+	font-size: 40px;
 }
