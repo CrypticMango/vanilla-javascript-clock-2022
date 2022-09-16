@@ -148,10 +148,14 @@ function themeOneButton() {
 	document.body.style.color = "rgb(233, 69, 96)";
 	document.getElementById("twelve-clock").backgroundColor = "rgb(233, 69, 96)";
 	document.getElementById("twelve-clock").border = "rgb(22, 33, 62)";
-	document.getElementsByTagName("h1").color = "rgb(22, 33, 62)";
-	document.getElementsByTagName("h2").color = "rgb(22, 33, 62)";
-	document.getElementById("current-date").color = "rgb(22, 33, 62)"
+	document.getElementById("title").style.color = "rgb(22, 33, 62)";
+	document.getElementById("theme-title").style.color = "rgb(22, 33, 62)";
+	document.getElementById("current-date").style.color = "rgb(22, 33, 62)";
+	document.getElementById("current-time").color = "rgb(22, 33, 62)";
+	document.getElementsByClassName("full-clock").style.borderColor = "rgb(22, 33, 62)";
+	document.getElementsByClassName("full-clock").style.boxShadow = "rgb(15, 52, 96)";
 }
+
 
 function themeTwoButton() {
 	document.body.style.backgroundColor = "#FFC0CB";
