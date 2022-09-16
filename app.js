@@ -152,8 +152,8 @@ function themeOneButton() {
 	document.getElementById("theme-title").style.color = "rgb(22, 33, 62)";
 	document.getElementById("current-date").style.color = "rgb(22, 33, 62)";
 	document.getElementById("current-time").color = "rgb(22, 33, 62)";
-	document.getElementsByClassName("full-clock").style.borderColor = "rgb(22, 33, 62)";
-	document.getElementsByClassName("full-clock").style.boxShadow = "rgb(15, 52, 96)";
+	document.getElementById("big-clock-border").style.borderColor = "rgb(22, 33, 62)";
+	document.getElementById("big-clock-border").style.boxShadow = "rgb(15, 52, 96)";
 }
 
 
