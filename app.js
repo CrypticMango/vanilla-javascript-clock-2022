@@ -129,6 +129,42 @@ console.log(
 	})
 );
 
+//theme button variables
+
+themeOne = document.getElementById("theme-one");
+themeTwo = document.getElementById("theme-two");
+themeThree = document.getElementById("theme-three");
+themeFour = document.getElementById("theme-four");
+
+themeOne.addEventListener("click", themeOneButton);
+themeTwo.addEventListener("click", themeTwoButton);
+themeThree.addEventListener("click", themeThreeButton);
+themeFour.addEventListener("click", themeFourButton);
+
+//functions for theme buttons
+
+function themeOneButton() {
+	document.body.style.backgroundColor = "rgb(233, 69, 96)";
+	document.body.style.color = "rgb(233, 69, 96)";
+	document.getElementById("twelve-clock").backgroundColor = "rgb(233, 69, 96)";
+	document.getElementById("twelve-clock").border = "rgb(22, 33, 62)";
+	document.getElementsByTagName("h1").color = "rgb(22, 33, 62)";
+	document.getElementsByTagName("h2").color = "rgb(22, 33, 62)";
+	document.getElementById("current-date").color = "rgb(22, 33, 62)"
+}
+
+function themeTwoButton() {
+	document.body.style.backgroundColor = "#FFC0CB";
+}
+
+function themeThreeButton() {
+	document.body.style.backgroundColor = "#00FF00";
+}
+
+function themeFourButton() {
+	document.body.style.backgroundColor = "#A020F0";
+}
+
 console.log(time);
 console.log(today);
 console.log(day);
