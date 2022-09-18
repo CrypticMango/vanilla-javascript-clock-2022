@@ -144,21 +144,96 @@ themeFour.addEventListener("click", themeFourButton);
 //functions for theme buttons
 
 function themeOneButton() {
+	//change background
 	document.body.style.backgroundColor = "rgb(233, 69, 96)";
+
+	//change text color
 	document.body.style.color = "rgb(233, 69, 96)";
-	document.getElementById("twelve-clock").backgroundColor = "rgb(233, 69, 96)";
-	document.getElementById("twelve-clock").border = "rgb(22, 33, 62)";
+
+	//change clock 12 button background color
+	document.getElementById("twelve-clock").style.backgroundColor = "rgb(233, 69, 96)";
+
+	//change clock 12 button border color
+	document.getElementById("twelve-clock").style.border = "2px solid rgb(22, 33, 62)";
+
+	//change clock 24 button border color
+	document.getElementById("twenty-four-clock").style.border = "2px solid rgb(22, 33, 62)";
+
+	//change clock 24 button border color
+	document.getElementById("twenty-four-clock").style.backgroundColor = "rgb(233, 69, 96)";
+
+	//text color change
 	document.getElementById("title").style.color = "rgb(22, 33, 62)";
 	document.getElementById("theme-title").style.color = "rgb(22, 33, 62)";
 	document.getElementById("current-date").style.color = "rgb(22, 33, 62)";
-	document.getElementById("current-time").color = "rgb(22, 33, 62)";
+	document.getElementById("current-time").style.color = "rgb(233, 69, 96)";
+
+	//large clock border
 	document.getElementById("big-clock-border").style.borderColor = "rgb(22, 33, 62)";
-	document.getElementById("big-clock-border").style.boxShadow = "rgb(15, 52, 96)";
+	document.getElementById("big-clock-border").style.boxShadow = "0px 0px 0px 5px rgb(15, 52, 96) inset";
+
+	//theme buttons border change
+	document.getElementsByClassName('color-buttons')[0].style.border = "2px solid rgb(22, 33, 62)";
+	document.getElementsByClassName('color-buttons')[1].style.border = "2px solid rgb(22, 33, 62)";
+	document.getElementsByClassName('color-buttons')[2].style.border = "2px solid rgb(22, 33, 62)";
+	document.getElementsByClassName('color-buttons')[3].style.border = "2px solid rgb(22, 33, 62)";
+
+	//theme buttons background change
+	document.getElementsByClassName('color-buttons')[0].style.backgroundColor = "rgb(233, 69, 96)";
+	document.getElementsByClassName('color-buttons')[1].style.backgroundColor = "rgb(233, 69, 96)";
+	document.getElementsByClassName('color-buttons')[2].style.backgroundColor = "rgb(233, 69, 96)";
+	document.getElementsByClassName('color-buttons')[3].style.backgroundColor = "rgb(233, 69, 96)";
+
+	//digi clock styling
+	document.getElementsByClassName('digi-clock')[0].style.backgroundColor = "rgb(22, 33, 62)";
+	document.getElementsByClassName('digi-clock')[0].style.border = "4px solid rgb(15, 52, 96)";
 }
 
 
 function themeTwoButton() {
-	document.body.style.backgroundColor = "#FFC0CB";
+	//change background
+	document.body.style.backgroundColor = "#000000";
+
+	//general text color
+	document.body.style.color = "rgb(255, 182, 185)";
+
+	//change clock 12 button background color
+	document.getElementById("twelve-clock").style.backgroundColor = "rgb(255, 182, 185)";
+
+	//change clock 12 button border color
+	document.getElementById("twelve-clock").style.border = "2px solid rgb(190, 235, 233)";
+
+	//change clock 24 button border color
+	document.getElementById("twenty-four-clock").style.border = "2px solid rgb(190, 235, 233)";
+
+	//change clock 24 button border color
+	document.getElementById("twenty-four-clock").style.backgroundColor = "rgb(255, 182, 185)";
+	
+	//text color change
+	document.getElementById("title").style.color = "rgb(190, 235, 233)";
+	document.getElementById("theme-title").style.color = "rgb(190, 235, 233)";
+	document.getElementById("current-date").style.color = "rgb(190, 235, 233)";
+	document.getElementById("current-time").style.color = "#000000";
+	
+	//large clock border
+	document.getElementById("big-clock-border").style.borderColor = "rgb(255, 182, 185)";
+	document.getElementById("big-clock-border").style.boxShadow = "0px 0px 0px 5px rgb(246, 238, 199) inset";
+
+	//theme buttons border change
+	document.getElementsByClassName('color-buttons')[0].style.border = "2px solid rgb(255, 182, 185)";
+	document.getElementsByClassName('color-buttons')[1].style.border = "2px solid rgb(255, 182, 185)";
+	document.getElementsByClassName('color-buttons')[2].style.border = "2px solid rgb(255, 182, 185)";
+	document.getElementsByClassName('color-buttons')[3].style.border = "2px solid rgb(255, 182, 185)";
+
+	//theme buttons background change
+	document.getElementsByClassName('color-buttons')[0].style.backgroundColor = "rgb(246, 238, 199)";
+	document.getElementsByClassName('color-buttons')[1].style.backgroundColor = "rgb(246, 238, 199)";
+	document.getElementsByClassName('color-buttons')[2].style.backgroundColor = "rgb(246, 238, 199)";
+	document.getElementsByClassName('color-buttons')[3].style.backgroundColor = "rgb(246, 238, 199)";
+
+	//digi clock styling
+	document.getElementsByClassName('digi-clock')[0].style.backgroundColor = "rgb(246, 238, 199)";
+	document.getElementsByClassName('digi-clock')[0].style.border = "4px solid rgb(255, 182, 185)";
 }
 
 function themeThreeButton() {
