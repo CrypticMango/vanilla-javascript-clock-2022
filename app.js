@@ -140,7 +140,7 @@ themeTwo.addEventListener("click", themeTwoButton);
 themeThree.addEventListener("click", themeThreeButton);
 themeFour.addEventListener("click", themeFourButton);
 
-//functions for theme buttons
+//functions for theme button color switching
 function themeOneButton() {
 	//change background
 	document.body.style.backgroundColor = "rgb(233, 69, 96)";
@@ -336,4 +336,5 @@ console.log(day);
 console.log(month);
 console.log(year);
 
-pressTwelve();
+//pressTwelve();
+pressTwentyFour();
