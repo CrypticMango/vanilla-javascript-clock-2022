@@ -94,13 +94,3 @@ p {
 	border-radius: 20px;
 }
 
-.color-buttons {
-	width: 30px;
-	text-align: center;
-}
-
-@media (min-width: 428px) and (max-width: 430px) {
-	button {
-		text-align: center;
-	}
-}
