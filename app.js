@@ -18,6 +18,8 @@ function pressTwentyFour() {
 	currentTwoFourTime.innerHTML = time;
 }
 
+
+
 //displays current time 12 hour clock
 
 const twelveClock = document.getElementById("twelve-clock");
@@ -336,5 +338,5 @@ console.log(day);
 console.log(month);
 console.log(year);
 
-//pressTwelve();
-pressTwentyFour();
+pressTwelve();
+//pressTwentyFour();
