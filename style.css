@@ -97,3 +97,9 @@ p {
 	width: 30px;
 	text-align: center;
 }
+
+@media (min-width: 428px) and (max-width: 428px) {
+	button {
+		text-align: center;
+	}
+}
