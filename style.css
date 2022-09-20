@@ -47,6 +47,7 @@ button {
 	font-size: 15px;
 	font-weight: bold;
 	border-radius: 7px;
+	text-align: center;
 }
 
 #current-date {
@@ -98,8 +99,8 @@ p {
 	text-align: center;
 }
 
-@media (min-width: 428px) and (max-width: 428px) {
-	button {
+@media (min-width: 428px) and (max-width: 430px) {
+	button #color-buttons {
 		text-align: center;
 	}
 }
