@@ -101,6 +101,6 @@ p {
 
 @media (min-width: 428px) and (max-width: 430px) {
 	button {
-		padding-right: 10px;
+		padding-right: 15px;
 	}
 }
