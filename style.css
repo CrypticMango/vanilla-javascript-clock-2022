@@ -50,6 +50,10 @@ button {
 	text-align: center;
 }
 
+button:hover {
+	cursor: pointer;
+}
+
 #current-date {
 	color: var(--dark-navy-blue);
 }
